@@ -51,8 +51,7 @@ def iit_delhi_tenders():
         df.to_csv('iit_delhi_tenders.csv')
 # iit_delhi_tenders()
 
-driver=setdriver()
-driver.get('https://www.nirfindia.org/Rankings/2025/UniversityRanking.html')
+
 
 
 
