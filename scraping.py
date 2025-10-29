@@ -54,9 +54,6 @@ def iit_delhi_tenders():
 # iit_delhi_tenders()
 
 
-print('hello')
-
-
 
 
 
