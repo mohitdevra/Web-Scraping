@@ -6,9 +6,7 @@ from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 
 def setdriver():
-    geckodriver_path = "./geckodriver"
-    service = Service(executable_path=geckodriver_path)
-    driver = webdriver.Firefox(service=service)
+    driver = webdriver.Firefox()
 
     return driver
 
@@ -52,6 +50,11 @@ def iit_delhi_tenders():
         df=pd.DataFrame(dic)
         df.to_csv('iit_delhi_tenders.csv')
 # iit_delhi_tenders()
+
+driver=setdriver()
+driver.get('https://www.nirfindia.org/Rankings/2025/UniversityRanking.html')
+
+
 
 
 
